@@ -3,10 +3,11 @@ A native iOS app built with Swift UIKit for reading articles. Features grid/list
 
 Screenshots
 <img width="1206" height="2622" alt="image" src="https://github.com/user-attachments/assets/d6771f0c-377d-4e62-bf27-c3e4a1d47344" />
-<img width="1206" height="2622" alt="image" src="https://github.com/user-attachments/assets/c7b8fb06-e460-4f3a-9b94-0f5b74282fca" />
 <img width="1206" height="2622" alt="image" src="https://github.com/user-attachments/assets/9bd19400-7147-4b5c-bff0-7a73318a5dc6" />
 
-
+Articles – iOS App Documentation
+URL: https://docs.google.com/document/d/1PgIqyBBsaDaPmgpitT_SZuaq3Ue8Y92PDrjqtdCslqY/edit?tab=t.0#heading=h.wt6odth7vwc7
+  
 Features
 
 🚀 Animated splash screen on launch
