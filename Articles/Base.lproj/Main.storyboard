@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xxJ-x8-8ru">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="51z-b2-i52">
+            <objects>
+                <viewController id="xxJ-x8-8ru" customClass="SplashViewController" customModule="Articles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="2C5-Hv-xYR">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0zP-fl-6RC">
+                                <rect key="frame" x="140" y="312" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Zhj-JK-vdV">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="180"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="160" id="nCL-Gx-mh0">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="180"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Articles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mD4-zT-1hQ">
+                                <rect key="frame" x="148" y="504" width="144.33333333333337" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" name="white_color"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                </variation>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HqX-ec-DsM" customClass="FTLinearActivityIndicator" customModule="FTLinearActivityIndicator">
+                                <rect key="frame" x="150" y="575" width="140" height="8"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Hmb-pR-kiZ"/>
+                                    <constraint firstAttribute="height" constant="8" id="MeF-Dd-8ac"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n2b-IY-BJB"/>
+                        <color key="backgroundColor" name="app_primary_color"/>
+                        <constraints>
+                            <constraint firstItem="mD4-zT-1hQ" firstAttribute="centerY" secondItem="2C5-Hv-xYR" secondAttribute="centerY" constant="50" id="84m-3T-T6U"/>
+                            <constraint firstItem="0zP-fl-6RC" firstAttribute="centerX" secondItem="2C5-Hv-xYR" secondAttribute="centerX" id="NUP-9k-zRx"/>
+                            <constraint firstItem="mD4-zT-1hQ" firstAttribute="top" secondItem="0zP-fl-6RC" secondAttribute="bottom" constant="32" id="OQ9-wA-Am9"/>
+                            <constraint firstItem="HqX-ec-DsM" firstAttribute="centerX" secondItem="mD4-zT-1hQ" secondAttribute="centerX" id="oI2-xa-bvB"/>
+                            <constraint firstItem="mD4-zT-1hQ" firstAttribute="centerX" secondItem="0zP-fl-6RC" secondAttribute="centerX" id="srU-4p-BjD"/>
+                            <constraint firstItem="HqX-ec-DsM" firstAttribute="top" secondItem="mD4-zT-1hQ" secondAttribute="bottom" constant="23" id="wGq-x4-nVz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="HqX-ec-DsM" id="Y2n-qa-Fxn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7x-ja-cPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808" y="131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appIcon" width="144" height="144"/>
+        <namedColor name="app_primary_color">
+            <color red="0.13725490196078433" green="0.23921568627450981" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white_color">
+            <color red="0.99607843137254903" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
